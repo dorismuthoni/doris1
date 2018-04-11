@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#381083"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    tools:context="com.asaria.adiratictactoe.Multi3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#1af5ca"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/loses"
+                android:text="PLAYER 1"
+                android:textAllCaps="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/wins"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="PLAYER 2"
+                android:layout_gravity="end"
+                android:layout_alignParentRight="true"
+                android:textAllCaps="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#1af5ca"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/loses_0"
+                android:text="0"
+                android:layout_marginLeft="8dp"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/wins_0"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:layout_gravity="end"
+                android:textAllCaps="true"/>
+        </RelativeLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="105sp"
+                android:onClick="button1"
+                android:id="@+id/button1"
+                android:clickable="true"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:text=""
+                android:layout_height="100sp"/>
+
+            <Button
+                android:layout_width="100sp"
+                android:onClick="button2"
+                android:id="@+id/button2"
+                android:clickable="true"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:text=""
+                android:layout_height="100sp"/>
+
+            <Button
+                android:layout_width="100sp"
+                android:onClick="button3"
+                android:id="@+id/button3"
+                android:clickable="true"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:text=""
+                android:layout_height="100sp"/>
+
+
+            <Button
+                android:layout_width="105sp"
+                android:onClick="button4"
+                android:id="@+id/button4"
+                android:clickable="true"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:text=""
+                android:layout_height="100sp"/>
+
+            <Button
+                android:layout_width="100sp"
+                android:onClick="button5"
+                android:id="@+id/button5"
+                android:clickable="true"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:text=""
+                android:layout_height="100sp"/>
+
+            <Button
+                android:layout_width="100sp"
+                android:onClick="button6"
+                android:id="@+id/button6"
+                android:clickable="true"
+                android:layout_column="3"
+                android:layout_row="2"
+                android:text=""
+                android:layout_height="100sp"/>
+
+
+            <Button
+                android:layout_width="105sp"
+                android:onClick="button7"
+                android:id="@+id/button7"
+                android:clickable="true"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:text=""
+                android:layout_height="100sp"/>
+
+
+            <Button
+                android:layout_width="100sp"
+                android:onClick="button8"
+                android:id="@+id/button8"
+                android:clickable="true"
+                android:layout_column="2"
+                android:layout_row="3"
+                android:text=""
+                android:layout_height="100sp"/>
+
+            <Button
+                android:layout_width="100sp"
+                android:onClick="button9"
+                android:id="@+id/button9"
+                android:clickable="true"
+                android:layout_column="3"
+                android:layout_row="3"
+                android:text=""
+                android:layout_height="100sp"/>
+
+        </GridLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="multi5"
+                android:background="#ff920e"
+                android:layout_margin="4dp"
+                android:text="5"
+                android:textAllCaps="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:background="#ff920e"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:onClick="reset"
+                android:text="RESET"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#1af5ca"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/player"
+                android:text="PLAYER 2"
+                android:layout_alignParentRight="true"
+                android:textAllCaps="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/opponent"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="PLAYER 1"
+                android:layout_gravity="end"
+                android:textAllCaps="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#1af5ca"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="x"
+                android:textSize="32dp"
+                android:textAllCaps="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="8dp"
+                android:padding="4dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="O"
+                android:textSize="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:textAllCaps="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
